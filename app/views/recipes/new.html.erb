@@ -31,13 +31,13 @@
           </div>
 
           <div class="field">
-            <%= f.label :body, "概要詳細", class: "label" %>
-            <%= f.text_area :body, class: "input" %>
+            <%= f.label :body, "動画URL", class: "label" %>
+            <%= f.text_field :body, class: "input" %>
           </div>
 
           <div class="field">
-            <%= f.label :image, "画像", class: "label" %>
-            <%= f.attachment_field :image, class: "input" %>
+            <%= f.label :image, "イメージ画像（サムネイル）", class: "label" %>
+            <%= f.attachment_field :image,  class: "input" %>
           </div>
 
           <%= f.submit "投稿", class: "button is-success" %>
