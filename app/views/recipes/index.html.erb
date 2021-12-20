@@ -2,7 +2,7 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        工程概要一覧
+        保全詳細一覧
       </h1>
     </div>
   </div>
@@ -34,6 +34,11 @@
                   <div class="title"><%=link_to recipe.user.username, user_path(recipe.user.id) %></div>
                 </div>
               </div>
+
+               <div class="content">
+                <%= recipe.title %>
+              </div>
+
               <div class="content">
                 <time><%= recipe.updated_at.strftime("%Y-%m-%d %H:%M") %> </time>更新
               </div>
