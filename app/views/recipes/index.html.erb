@@ -35,8 +35,10 @@
                 </div>
               </div>
 
-               <div class="content">
+              <div class="content">
+                <%= link_to recipe_path(recipe) do %>
                 <%= recipe.title %>
+                <% end %>
               </div>
 
               <div class="content">
