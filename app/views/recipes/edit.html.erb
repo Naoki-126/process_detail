@@ -36,6 +36,11 @@
           </div>
 
           <div class="field">
+            <%= f.label :status, "コメント", class: "label" %>
+            <%= f.text_area :status,  class: "input" %>
+          </div>
+
+          <div class="field">
             <%= f.label :image, "イメージ画像（サムネイル）", class: "label" %>
             <%= f.attachment_field :image,  class: "input" %>
           </div>
