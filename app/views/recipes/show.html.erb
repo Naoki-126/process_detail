@@ -33,6 +33,16 @@
                   <td><%= Rinku.auto_link(@recipe.body, :all, 'target="_blank"').html_safe%></td>
                 </tr>
               </table>
+
+              <table class="table is-narrow">
+                <tr>
+                  <th>コメント</th>
+                </tr>
+                <tr>
+                  <td><%= simple_format @recipe.status %></td>
+                </tr>
+              </table>
+
               <% if @recipe.user.id == current_user.id %>
                 <%= link_to "編集", edit_recipe_path(@recipe), class: "button is-success" %>
               <% end %>
